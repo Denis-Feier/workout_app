@@ -1,5 +1,5 @@
 //
-//  HomeVC.swift
+//  WorkoutVC.swift
 //  workout_app
 //
 //  Created by Denis Feier on 08.05.2021.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class WorkoutVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let homeView = HomeView()
-        addView(homeView)
+        let workout = WorkoutView()
+        addView(workout)
     }
 
 }

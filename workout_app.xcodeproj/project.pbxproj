@@ -24,6 +24,10 @@
 		FF650CE02646E532005867A3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CDF2646E532005867A3 /* HomeVC.swift */; };
 		FF650CE22646E56D005867A3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CE12646E56D005867A3 /* AppSettings.swift */; };
 		FF650CE42646F18D005867A3 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CE32646F18D005867A3 /* HomeViewPresenter.swift */; };
+		FF650CE62646F7C6005867A3 /* Playground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF650CE52646F7C6005867A3 /* Playground.storyboard */; };
+		FF650CE82646F879005867A3 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CE72646F879005867A3 /* WorkoutVC.swift */; };
+		FF650CEB2646F89C005867A3 /* WorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF650CEA2646F89C005867A3 /* WorkoutView.xib */; };
+		FF650CED2646F8AF005867A3 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CEC2646F8AF005867A3 /* WorkoutView.swift */; };
 		FF6CE87D26448852004A5B39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE87C26448852004A5B39 /* AppDelegate.swift */; };
 		FF6CE87F26448852004A5B39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE87E26448852004A5B39 /* SceneDelegate.swift */; };
 		FF6CE88126448852004A5B39 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE88026448852004A5B39 /* LoginVC.swift */; };
@@ -75,6 +79,10 @@
 		FF650CDF2646E532005867A3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FF650CE12646E56D005867A3 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		FF650CE32646F18D005867A3 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		FF650CE52646F7C6005867A3 /* Playground.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playground.storyboard; sourceTree = "<group>"; };
+		FF650CE72646F879005867A3 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
+		FF650CEA2646F89C005867A3 /* WorkoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutView.xib; sourceTree = "<group>"; };
+		FF650CEC2646F8AF005867A3 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		FF6CE87926448852004A5B39 /* workout_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workout_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6CE87C26448852004A5B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6CE87E26448852004A5B39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +153,7 @@
 		FF650CBF2646ACCD005867A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF650CE92646F88E005867A3 /* Workout */,
 				FF650CDA2646E40D005867A3 /* Home */,
 				FF650CCF2646B8A6005867A3 /* Register */,
 				FF650CC22646AD3C005867A3 /* Login */,
@@ -213,6 +222,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		FF650CE92646F88E005867A3 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				FF650CEA2646F89C005867A3 /* WorkoutView.xib */,
+				FF650CEC2646F8AF005867A3 /* WorkoutView.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
 		FF6CE87026448852004A5B39 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +268,7 @@
 				FF6CE88726448853004A5B39 /* LaunchScreen.storyboard */,
 				FF6CE88A26448853004A5B39 /* Info.plist */,
 				FF650CD72646D469005867A3 /* GoogleService-Info.plist */,
+				FF650CE52646F7C6005867A3 /* Playground.storyboard */,
 			);
 			path = workout_app;
 			sourceTree = "<group>";
@@ -278,6 +297,7 @@
 				FF6CE8AF26449238004A5B39 /* RegisterVC.swift */,
 				FF6CE88026448852004A5B39 /* LoginVC.swift */,
 				FF650CDF2646E532005867A3 /* HomeVC.swift */,
+				FF650CE72646F879005867A3 /* WorkoutVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -390,11 +410,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF650CE62646F7C6005867A3 /* Playground.storyboard in Resources */,
 				FF6CE88926448853004A5B39 /* LaunchScreen.storyboard in Resources */,
 				FF650CD32646B8CD005867A3 /* RegisterView.xib in Resources */,
 				FF650CD82646D469005867A3 /* GoogleService-Info.plist in Resources */,
 				FF6CE88626448853004A5B39 /* Assets.xcassets in Resources */,
 				FF650CC42646AD4F005867A3 /* LoginView.xib in Resources */,
+				FF650CEB2646F89C005867A3 /* WorkoutView.xib in Resources */,
 				FF650CDE2646E42A005867A3 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +547,7 @@
 			files = (
 				FF650CE22646E56D005867A3 /* AppSettings.swift in Sources */,
 				FF650CD12646B8BF005867A3 /* RegisterView.swift in Sources */,
+				FF650CED2646F8AF005867A3 /* WorkoutView.swift in Sources */,
 				FF6CE88126448852004A5B39 /* LoginVC.swift in Sources */,
 				FF650CD62646BF09005867A3 /* RegisterProtocol.swift in Sources */,
 				FF6CE8B026449238004A5B39 /* RegisterVC.swift in Sources */,
@@ -536,6 +559,7 @@
 				FF650CCC2646B19C005867A3 /* UIViewControllerExtension.swift in Sources */,
 				FF650CE02646E532005867A3 /* HomeVC.swift in Sources */,
 				FF650CCE2646B6AF005867A3 /* UIViewExtension.swift in Sources */,
+				FF650CE82646F879005867A3 /* WorkoutVC.swift in Sources */,
 				FF6CE87F26448852004A5B39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

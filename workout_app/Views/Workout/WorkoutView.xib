@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="workout_app" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkoutView" customModule="workout_app" customModuleProvider="target">
             <connections>
-                <outlet property="containerView" destination="iN0-l3-epB" id="c9z-0B-UBj"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="5zE-3N-Wul"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,8 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-ml-7iH">
-                    <rect key="frame" x="184.5" y="437.5" width="45.5" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVR-Gb-QHL">
+                    <rect key="frame" x="175" y="437.5" width="64.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -28,10 +28,10 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="rT3-ml-7iH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6HV-f3-Jh0"/>
-                <constraint firstItem="rT3-ml-7iH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="99s-O2-fWD"/>
+                <constraint firstItem="fVR-Gb-QHL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lYH-zm-4US"/>
+                <constraint firstItem="fVR-Gb-QHL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tto-fQ-5M5"/>
             </constraints>
-            <point key="canvasLocation" x="67" y="100"/>
+            <point key="canvasLocation" x="17" y="59"/>
         </view>
     </objects>
     <resources>
