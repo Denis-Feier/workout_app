@@ -29,6 +29,8 @@
 		FF650CEB2646F89C005867A3 /* WorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF650CEA2646F89C005867A3 /* WorkoutView.xib */; };
 		FF650CED2646F8AF005867A3 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CEC2646F8AF005867A3 /* WorkoutView.swift */; };
 		FF650CEF264723BE005867A3 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CEE264723BE005867A3 /* UIImageExtension.swift */; };
+		FF650CF3264735E7005867A3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CF2264735E7005867A3 /* RoundedButton.swift */; };
+		FF650CF526473EFF005867A3 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CF426473EFF005867A3 /* SpinnerViewController.swift */; };
 		FF6CE87D26448852004A5B39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE87C26448852004A5B39 /* AppDelegate.swift */; };
 		FF6CE87F26448852004A5B39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE87E26448852004A5B39 /* SceneDelegate.swift */; };
 		FF6CE88126448852004A5B39 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE88026448852004A5B39 /* LoginVC.swift */; };
@@ -85,6 +87,8 @@
 		FF650CEA2646F89C005867A3 /* WorkoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutView.xib; sourceTree = "<group>"; };
 		FF650CEC2646F8AF005867A3 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		FF650CEE264723BE005867A3 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		FF650CF2264735E7005867A3 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		FF650CF426473EFF005867A3 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		FF6CE87926448852004A5B39 /* workout_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workout_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6CE87C26448852004A5B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6CE87E26448852004A5B39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		FF650CBF2646ACCD005867A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF650CF0264735BF005867A3 /* Commun */,
 				FF650CE92646F88E005867A3 /* Workout */,
 				FF650CDA2646E40D005867A3 /* Home */,
 				FF650CCF2646B8A6005867A3 /* Register */,
@@ -212,6 +217,7 @@
 			children = (
 				FF650CE12646E56D005867A3 /* AppSettings.swift */,
 				FF650CE32646F18D005867A3 /* ViewPresenter.swift */,
+				FF650CF426473EFF005867A3 /* SpinnerViewController.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -232,6 +238,14 @@
 				FF650CEC2646F8AF005867A3 /* WorkoutView.swift */,
 			);
 			path = Workout;
+			sourceTree = "<group>";
+		};
+		FF650CF0264735BF005867A3 /* Commun */ = {
+			isa = PBXGroup;
+			children = (
+				FF650CF2264735E7005867A3 /* RoundedButton.swift */,
+			);
+			path = Commun;
 			sourceTree = "<group>";
 		};
 		FF6CE87026448852004A5B39 = {
@@ -554,6 +568,7 @@
 				FF650CED2646F8AF005867A3 /* WorkoutView.swift in Sources */,
 				FF6CE88126448852004A5B39 /* LoginVC.swift in Sources */,
 				FF650CD62646BF09005867A3 /* RegisterProtocol.swift in Sources */,
+				FF650CF526473EFF005867A3 /* SpinnerViewController.swift in Sources */,
 				FF6CE8B026449238004A5B39 /* RegisterVC.swift in Sources */,
 				FF6CE87D26448852004A5B39 /* AppDelegate.swift in Sources */,
 				FF650CDC2646E41F005867A3 /* HomeView.swift in Sources */,
@@ -561,6 +576,7 @@
 				FF650CE42646F18D005867A3 /* ViewPresenter.swift in Sources */,
 				FF650CC62646AD66005867A3 /* LoginView.swift in Sources */,
 				FF650CCC2646B19C005867A3 /* UIViewControllerExtension.swift in Sources */,
+				FF650CF3264735E7005867A3 /* RoundedButton.swift in Sources */,
 				FF650CE02646E532005867A3 /* HomeVC.swift in Sources */,
 				FF650CCE2646B6AF005867A3 /* UIViewExtension.swift in Sources */,
 				FF650CE82646F879005867A3 /* WorkoutVC.swift in Sources */,

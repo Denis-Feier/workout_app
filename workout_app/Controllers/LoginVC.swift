@@ -42,22 +42,28 @@ extension LoginVC: LoginProtocol {
     }
     
     func login(email: String, password: String) {
+        
+        let spinner = SpinnerViewController.createSpinnerView(vc: self)
+        
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             guard let strongSelf = self else {
                 return
             }
             
             guard error == nil else {
+                SpinnerViewController.dismissSpinnerView(spinner: spinner)
                 strongSelf.showAlert(message: "Credentials not ok or server error")
                 return
             }
             
             result?.user.getIDToken(completion: { token, err in
                 guard err == nil else {
+                    SpinnerViewController.dismissSpinnerView(spinner: spinner)
                     strongSelf.showAlert(message: "Error getting token")
                     return
                 }
                 AppSettings.shared.token = token
+                SpinnerViewController.dismissSpinnerView(spinner: spinner)
                 strongSelf.goToHome()
             })
             

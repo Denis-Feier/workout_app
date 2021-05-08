@@ -62,7 +62,7 @@
                         </textField>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxS-iq-YUS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxS-iq-YUS" customClass="RoundedButton" customModule="workout_app" customModuleProvider="target">
                     <rect key="frame" x="25" y="228" width="364" height="45"/>
                     <color key="backgroundColor" red="0.50588235290000005" green="0.70196078429999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>

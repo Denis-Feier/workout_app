@@ -28,6 +28,14 @@ class AppSettings {
     func logout() {
         UserDefaults.standard.setValue("", forKey: "userToken")
     }
+    
+    func getUserID() -> String? {
+        guard let tokenUD = token, !tokenUD.isEmpty else { return nil }
+        
+        guard let decodedToken = try? decode(jwt: tokenUD) else { return nil }
+        
+        return decodedToken.body["user_id"] as? String
+    }
 
     func tokenIsValid() -> Bool {
         
