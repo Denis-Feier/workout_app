@@ -15,8 +15,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let rootVC = AppSettings.shared.tokenIsValid() ? HomeViewPresenter.getHomeVC() : LoginVC()
+        let rootVC = AppSettings.shared.tokenIsValid() ? ViewPresenter.shared.getHomeVC() : LoginVC()
         let navigation = UINavigationController(rootViewController: rootVC)
+        
+//        navigation.pushViewController(rootVC, animated: false)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }

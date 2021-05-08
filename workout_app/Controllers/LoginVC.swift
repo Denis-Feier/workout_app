@@ -68,8 +68,10 @@ extension LoginVC: LoginProtocol {
         guard let window = UIApplication.shared.windows.first else {
             return
         }
-
-        window.rootViewController = HomeViewPresenter.getHomeVC()
+        
+        let navigation = UINavigationController(rootViewController: ViewPresenter.shared.getHomeVC())
+        
+        window.rootViewController = navigation
 
         let options: UIView.AnimationOptions = .transitionCrossDissolve
 

@@ -86,7 +86,7 @@ extension RegisterVC: RegisterProtocol {
             return
         }
 
-        window.rootViewController = HomeViewPresenter.getHomeVC()
+        window.rootViewController = ViewPresenter.shared.getHomeVC()
 
         let options: UIView.AnimationOptions = .transitionCrossDissolve
 

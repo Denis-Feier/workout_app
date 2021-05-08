@@ -24,6 +24,10 @@ class AppSettings {
         self.token = tokenUD
         return true
     }
+    
+    func logout() {
+        UserDefaults.standard.setValue("", forKey: "userToken")
+    }
 
     func tokenIsValid() -> Bool {
         

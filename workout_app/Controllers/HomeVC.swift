@@ -13,6 +13,12 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         let homeView = HomeView()
         addView(homeView)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
 
 }
