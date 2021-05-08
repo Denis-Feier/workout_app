@@ -32,6 +32,11 @@ class LoginView: UIView {
         addSubviewWithContraints(containerView)
         configureBtn()
         addPlaceholders()
+        configureFields()
+    }
+    
+    func configureFields() {
+        passwordField.isSecureTextEntry = true
     }
     
     func addPlaceholders() {

@@ -19,4 +19,15 @@ extension UIViewController {
         view.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
     }
     
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
 }

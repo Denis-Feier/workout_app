@@ -12,6 +12,7 @@ target 'workout_app' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Analytics'
+  pod 'JWTDecode'
 
   target 'workout_appTests' do
     inherit! :search_paths

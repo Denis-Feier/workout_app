@@ -45,6 +45,12 @@ class RegisterView: UIView {
         checkmarkPicture.image = UIImage(systemName: "square")
         addPlaceholders()
         configBtns()
+        configureFields()
+    }
+    
+    func configureFields() {
+        passwordField.isSecureTextEntry = true
+        repasswordField.isSecureTextEntry = true
     }
     
     func addPlaceholders() {

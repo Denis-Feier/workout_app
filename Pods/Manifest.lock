@@ -330,6 +330,7 @@ PODS:
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.5.0)
+  - JWTDecode (2.6.0)
   - leveldb-library (1.22.1)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
@@ -345,6 +346,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
+  - JWTDecode
   - SwiftyJSON
 
 SPEC REPOS:
@@ -366,6 +368,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - JWTDecode
     - leveldb-library
     - nanopb
     - PromisesObjC
@@ -389,11 +392,12 @@ SPEC CHECKSUMS:
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  JWTDecode: 480ca441ddbd5fbfb2abf17870af62f86436be58
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 4d4a86160d472b4051047cbd7a8d671d5512f52a
+PODFILE CHECKSUM: a2847ef0d30e5dcc651749c32aa1bf8071f44c7e
 
 COCOAPODS: 1.9.3
