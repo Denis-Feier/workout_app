@@ -10,6 +10,7 @@ target 'workout_app' do
   pod 'Alamofire'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+#  pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Storage'
   pod 'Firebase/Analytics'
   pod 'JWTDecode'

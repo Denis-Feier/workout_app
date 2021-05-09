@@ -10,6 +10,8 @@
 		7FAA5E615D823716021B211F /* Pods_workout_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29562BBE2A28C2C66CA4D480 /* Pods_workout_app.framework */; };
 		A657D04FB40C8142A82DD376 /* Pods_workout_app_workout_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB50B598F66F6E00DFC17D28 /* Pods_workout_app_workout_appUITests.framework */; };
 		B7EEC692E9811C09D00DF3A2 /* Pods_workout_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC48922DDAA2610EDF5D159D /* Pods_workout_appTests.framework */; };
+		FF4BC3482648751600E9F98D /* SubmitWorkoutSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BC3472648751600E9F98D /* SubmitWorkoutSnap.swift */; };
+		FF4BC34A264877D800E9F98D /* WorkoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BC349264877D800E9F98D /* WorkoutProtocol.swift */; };
 		FF650CC42646AD4F005867A3 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF650CC32646AD4F005867A3 /* LoginView.xib */; };
 		FF650CC62646AD66005867A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CC52646AD66005867A3 /* LoginView.swift */; };
 		FF650CC92646AE7E005867A3 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF650CC82646AE7E005867A3 /* LoginProtocol.swift */; };
@@ -68,6 +70,8 @@
 		AE197BE5E9E27EC6963928A1 /* Pods-workout_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workout_appTests.debug.xcconfig"; path = "Target Support Files/Pods-workout_appTests/Pods-workout_appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB50B598F66F6E00DFC17D28 /* Pods_workout_app_workout_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workout_app_workout_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC48922DDAA2610EDF5D159D /* Pods_workout_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workout_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4BC3472648751600E9F98D /* SubmitWorkoutSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitWorkoutSnap.swift; sourceTree = "<group>"; };
+		FF4BC349264877D800E9F98D /* WorkoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProtocol.swift; sourceTree = "<group>"; };
 		FF650CC32646AD4F005867A3 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FF650CC52646AD66005867A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FF650CC82646AE7E005867A3 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			children = (
 				FF650CC82646AE7E005867A3 /* LoginProtocol.swift */,
 				FF650CD52646BF09005867A3 /* RegisterProtocol.swift */,
+				FF4BC349264877D800E9F98D /* WorkoutProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 		FF650CD42646BEDB005867A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF4BC3472648751600E9F98D /* SubmitWorkoutSnap.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -570,6 +576,7 @@
 				FF650CD62646BF09005867A3 /* RegisterProtocol.swift in Sources */,
 				FF650CF526473EFF005867A3 /* SpinnerViewController.swift in Sources */,
 				FF6CE8B026449238004A5B39 /* RegisterVC.swift in Sources */,
+				FF4BC34A264877D800E9F98D /* WorkoutProtocol.swift in Sources */,
 				FF6CE87D26448852004A5B39 /* AppDelegate.swift in Sources */,
 				FF650CDC2646E41F005867A3 /* HomeView.swift in Sources */,
 				FF650CC92646AE7E005867A3 /* LoginProtocol.swift in Sources */,
@@ -577,6 +584,7 @@
 				FF650CC62646AD66005867A3 /* LoginView.swift in Sources */,
 				FF650CCC2646B19C005867A3 /* UIViewControllerExtension.swift in Sources */,
 				FF650CF3264735E7005867A3 /* RoundedButton.swift in Sources */,
+				FF4BC3482648751600E9F98D /* SubmitWorkoutSnap.swift in Sources */,
 				FF650CE02646E532005867A3 /* HomeVC.swift in Sources */,
 				FF650CCE2646B6AF005867A3 /* UIViewExtension.swift in Sources */,
 				FF650CE82646F879005867A3 /* WorkoutVC.swift in Sources */,
