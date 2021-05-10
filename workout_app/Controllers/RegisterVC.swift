@@ -90,8 +90,8 @@ extension RegisterVC: RegisterProtocol {
         guard let window = UIApplication.shared.windows.first else {
             return
         }
-
-        window.rootViewController = ViewPresenter.shared.getHomeVC()
+        
+        window.rootViewController = UINavigationController(rootViewController: ViewPresenter.shared.getHomeVC())
 
         let options: UIView.AnimationOptions = .transitionCrossDissolve
 
