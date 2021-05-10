@@ -9,13 +9,15 @@ import UIKit
 
 class WorkoutVC: UIViewController {
 
-    lazy var setImageHandler: ((UIImage) -> Void)? = nil
+//    lazy var setImageHandler: ((UIImage) -> Void)? = nil
+    
+    var workoutView = WorkoutView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let workout = WorkoutView()
-        workout.delegate = self
-        addView(workout)
+//        let workout = WorkoutView()
+        workoutView.delegate = self
+        addView(workoutView)
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
@@ -47,7 +49,7 @@ extension WorkoutVC: WorkoutProtocol {
     
     func openSelector(completion: ((UIImage) -> Void)? = nil) {
         
-        setImageHandler = completion
+//        setImageHandler = completion
         
         let alert = UIAlertController(title: "Select Source", message: nil, preferredStyle: .actionSheet)
         let actionCamera = UIAlertAction(title: "Open Camera", style: .default) { _ in
@@ -84,12 +86,7 @@ extension WorkoutVC: UINavigationControllerDelegate, UIImagePickerControllerDele
             return
         }
         
-        guard let handler = setImageHandler else {
-            print("LOG: No handler found")
-            return
-        }
-        
-        handler(image)
+        workoutView.setImage(image: image)
     }
     
     func openPicker(sourceType: UIImagePickerController.SourceType) {

@@ -41,6 +41,12 @@
 		FF6CE89426448853004A5B39 /* workout_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE89326448853004A5B39 /* workout_appTests.swift */; };
 		FF6CE89F26448853004A5B39 /* workout_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE89E26448853004A5B39 /* workout_appUITests.swift */; };
 		FF6CE8B026449238004A5B39 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CE8AF26449238004A5B39 /* RegisterVC.swift */; };
+		FFD01E9326496B8800F79908 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD01E9226496B8800F79908 /* Workout.swift */; };
+		FFD01E96264972BE00F79908 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD01E94264972BE00F79908 /* WorkoutCell.swift */; };
+		FFD01E97264972BE00F79908 /* WorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD01E95264972BE00F79908 /* WorkoutCell.xib */; };
+		FFD01E9926497D2700F79908 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD01E9826497D2700F79908 /* DetailsVC.swift */; };
+		FFD01E9C26497D3F00F79908 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD01E9B26497D3F00F79908 /* DetailsView.swift */; };
+		FFD01E9E26497D5E00F79908 /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD01E9D26497D5E00F79908 /* DetailsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		FF6CE89E26448853004A5B39 /* workout_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workout_appUITests.swift; sourceTree = "<group>"; };
 		FF6CE8A026448853004A5B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF6CE8AF26449238004A5B39 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		FFD01E9226496B8800F79908 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		FFD01E94264972BE00F79908 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		FFD01E95264972BE00F79908 /* WorkoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutCell.xib; sourceTree = "<group>"; };
+		FFD01E9826497D2700F79908 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		FFD01E9B26497D3F00F79908 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		FFD01E9D26497D5E00F79908 /* DetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,7 @@
 		FF650CBF2646ACCD005867A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FFD01E9A26497D3000F79908 /* Details */,
 				FF650CF0264735BF005867A3 /* Commun */,
 				FF650CE92646F88E005867A3 /* Workout */,
 				FF650CDA2646E40D005867A3 /* Home */,
@@ -214,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				FF4BC3472648751600E9F98D /* SubmitWorkoutSnap.swift */,
+				FFD01E9226496B8800F79908 /* Workout.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +247,8 @@
 			children = (
 				FF650CDB2646E41F005867A3 /* HomeView.swift */,
 				FF650CDD2646E42A005867A3 /* HomeView.xib */,
+				FFD01E94264972BE00F79908 /* WorkoutCell.swift */,
+				FFD01E95264972BE00F79908 /* WorkoutCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -321,8 +337,18 @@
 				FF6CE88026448852004A5B39 /* LoginVC.swift */,
 				FF650CDF2646E532005867A3 /* HomeVC.swift */,
 				FF650CE72646F879005867A3 /* WorkoutVC.swift */,
+				FFD01E9826497D2700F79908 /* DetailsVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFD01E9A26497D3000F79908 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FFD01E9B26497D3F00F79908 /* DetailsView.swift */,
+				FFD01E9D26497D5E00F79908 /* DetailsView.xib */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +467,8 @@
 				FF650CC42646AD4F005867A3 /* LoginView.xib in Resources */,
 				FF650CEB2646F89C005867A3 /* WorkoutView.xib in Resources */,
 				FF650CDE2646E42A005867A3 /* HomeView.xib in Resources */,
+				FFD01E97264972BE00F79908 /* WorkoutCell.xib in Resources */,
+				FFD01E9E26497D5E00F79908 /* DetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,14 +597,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF650CE22646E56D005867A3 /* AppSettings.swift in Sources */,
+				FFD01E9926497D2700F79908 /* DetailsVC.swift in Sources */,
 				FF650CD12646B8BF005867A3 /* RegisterView.swift in Sources */,
 				FF650CEF264723BE005867A3 /* UIImageExtension.swift in Sources */,
 				FF650CED2646F8AF005867A3 /* WorkoutView.swift in Sources */,
+				FFD01E96264972BE00F79908 /* WorkoutCell.swift in Sources */,
 				FF6CE88126448852004A5B39 /* LoginVC.swift in Sources */,
 				FF650CD62646BF09005867A3 /* RegisterProtocol.swift in Sources */,
 				FF650CF526473EFF005867A3 /* SpinnerViewController.swift in Sources */,
 				FF6CE8B026449238004A5B39 /* RegisterVC.swift in Sources */,
 				FF4BC34A264877D800E9F98D /* WorkoutProtocol.swift in Sources */,
+				FFD01E9C26497D3F00F79908 /* DetailsView.swift in Sources */,
 				FF6CE87D26448852004A5B39 /* AppDelegate.swift in Sources */,
 				FF650CDC2646E41F005867A3 /* HomeView.swift in Sources */,
 				FF650CC92646AE7E005867A3 /* LoginProtocol.swift in Sources */,
@@ -585,6 +616,7 @@
 				FF650CCC2646B19C005867A3 /* UIViewControllerExtension.swift in Sources */,
 				FF650CF3264735E7005867A3 /* RoundedButton.swift in Sources */,
 				FF4BC3482648751600E9F98D /* SubmitWorkoutSnap.swift in Sources */,
+				FFD01E9326496B8800F79908 /* Workout.swift in Sources */,
 				FF650CE02646E532005867A3 /* HomeVC.swift in Sources */,
 				FF650CCE2646B6AF005867A3 /* UIViewExtension.swift in Sources */,
 				FF650CE82646F879005867A3 /* WorkoutVC.swift in Sources */,
